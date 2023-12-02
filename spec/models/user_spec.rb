@@ -1,17 +1,20 @@
 require 'rails_helper'
 
 RSpec.describe User, type: :model do
+  before do
+    @user =FactoryBot.build(:user)
+  end
 
   describe 'ユーザー登録' do
     context '新規登録できる場合' do
       it '全ての情報が存在すれば登録できる' do
-
+        expect(@user).to be_valid
       end
     end
 
     context '新規登録できない場合(ユーザー情報が原因のケース)' do
       it "nicknameが空では登録できない" do
-
+        
       end
       it "emailが空では登録できない" do
 
