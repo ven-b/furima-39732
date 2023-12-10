@@ -8,6 +8,6 @@ window.addEventListener('turbo:load', () => {
     addTaxDom.innerHTML = taxPrice;
 
     const profitPrice = document.getElementById("profit");
-    profitPrice.innerHTML = inputValue - taxPrice;
+    profitPrice.innerHTML = Math.floor(inputValue - taxPrice);
   });
 });
