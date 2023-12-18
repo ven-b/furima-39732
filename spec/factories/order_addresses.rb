@@ -6,5 +6,6 @@ FactoryBot.define do
     street { '渋谷区1-1-1' }
     building_name { 'アジアビル' }
     phone_number { Faker::Number.between(from: 1000000000, to: 99999999999) }
+    token {"tok_abcdefghijk00000000000000000"}
   end
 end
